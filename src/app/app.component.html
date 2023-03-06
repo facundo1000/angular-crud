@@ -4,12 +4,11 @@
       <h1 class="text-center">{{ title }}</h1>
     </div>
 
+
     <!--Alerta -->
     <div class="col-sm-4">
-      <div class="alert alert-success alert-dismissable" *ngIf="message">
-        <a href="#" class="close p-2" (click)="closeAlert()"> 
-          &times; 
-        </a>
+      <div class="alert alert-success alert-dismissible fade show" role="alert" *ngIf="message">
+        <button type="button" class="btn-close" aria-label="Close" (click)="closeAlert()" ></button>
         {{message}}
       </div>
     </div>
